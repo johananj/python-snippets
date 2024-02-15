@@ -20,11 +20,19 @@ a_matrix[0] = [5,4,3,2,1]
 b = a[::-1]
 # reversing a subarray
 b = a[2:4][::-1]
+# swapping two elements
+a_list[j], a_list[j + 1] = a_list[j + 1], a_list[j]
+# avoiding indexing errors
+a_list = [1,2,3] 
+a[3] # error
+a[3:4] # no error, but returns a list
 
 # iteration
 range(N)
 # reversing, this is mostly O(1)
 reversed(range(N))
+# sorting, and returning a new array
+sorted(a_list)
 
 
 # Operations/mutations on lists

@@ -15,3 +15,17 @@ def increment():
 values = [1,2,3,4]
 for idx, value in enumerate(values [, start = 1]):
     print(idx,value)
+
+# Raising exceptions
+def do_something(parameter):
+    if parameter > 100:
+        raise ValueError('Parameter should...')
+    # rest of the code
+try:
+    do_something(101)
+except ValueError, e:
+    # display error message if necessary e.g. print str(e)
+
+# Building custom exception classes
+class ParameterError(Exception):
+    pass
