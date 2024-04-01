@@ -22,3 +22,9 @@ if 'a_variable' in locals():
 # check if global variable exists
 if 'my_variable' in globals():
   return True
+
+# add path to path variable
+# useful to load modules from a specific path
+sys.path.append('/path/to/module')
+
+
