@@ -33,3 +33,7 @@ class ParameterError(Exception):
 # iterating over two lists in parallel
 for f, b in zip(foo, bar):
 	print(f, b)
+
+# to get the next item in an iterable
+mylist = iter(["apple", "banana", "cherry"])
+print(next(mylist))
